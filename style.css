@@ -1,0 +1,493 @@
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+        .font-family{
+            font-family: 'Lora', serif;
+        }
+
+        body{
+            background-image: url(img/背景-0.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* color */
+        .brown-0{
+            color: #C7802D;
+        }
+        .brown-2{
+            color: #978463;
+        }
+        .brown-3{
+            color: #503916;
+        }
+        .brown-4{
+            color: #3F3019;
+        }
+        .green-3{
+            color: #727C3D;
+        }
+        .light-color{
+            color: #FCF7F1;
+        }
+    /* ----------------nav ------------------*/
+        .hidden{
+            transform: translateY(px);
+        }
+        @media screen and (min-width:376px) {
+            nav{
+                width: 100%;
+                background-color: #ffffff;
+                position: fixed;
+                z-index: 999999;
+                top: 0%;
+                transform: 1s;
+            }
+        }
+        .scroll{
+            width: 100%;
+            height: 5px;
+            background-color: #9f6d3354;
+            position: fixed;
+            top:0;
+            z-index: 999999999;
+        }
+        .scroll-box{
+            width: 0%;
+            height: 100%;
+            background-color: #C7802D;
+        }
+        .media-nav{
+            width: 100%;
+            background-color: #ffffff;
+            position: fixed;
+            z-index: 999999;
+            top: 0%;
+        }
+    /* -----------------header-------------------- */
+        .carousel-indicators li {
+            width: 19.83px;
+            height: 10.18px;
+            border-radius: 10px;
+            border: 1px solid #AC9A7F;
+            background-color: #AC9A7F;
+            margin: 0 10px;
+
+        }
+
+        .media-header-img{
+            width:100%;
+            height: 286px;
+            background-image: url(img/img-1-iphone.png);
+            background-repeat: no-repeat;
+            background-position: center;        
+        }
+
+        .media-header{
+            margin-top: 40%;
+        }
+    /*--------- main About-seaction------------ */
+        #About{
+            transform: translatey(100px);
+            opacity:0 ;
+            transition: 2s;
+
+        }
+        .main-bg{
+            width: 100%;
+            background-color: hsla(44, 50%, 58%, 0.158);
+            box-shadow: 5px 5px 5px 5px #a7a88d37;
+            /* transform: translatey(100px); */
+            /* transition: 3s; */
+        }
+        @media screen and (min-width:376px) {
+            .main-bg{
+                margin-top: 300px;
+                height:550px;
+                padding-top: 5rem;
+            }
+        }
+
+        .carousel-inner {
+            top: 150px;
+        }
+        .carousel-indicators{
+            top: 700px;
+        }
+        .about-img{
+            width: 60%;
+            min-height:560px;
+            background-image: url(img/2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+
+        .media-about-img{
+            width: 100%;
+            height: 240px;
+            background-image: url(img/img-2-iphone.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .about-taiwantea-iphone-title-img{
+            width: 100%;
+            height: 54px;
+            margin:18px 0;
+            background-image: url(img/about\ taiwan\ tea\ iphone-title.png);
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    /* ---------history-sectiion ---------------*/
+        
+        @media screen and (min-width:376px){
+            .history{
+                margin-top: 20%;
+                /* transform: translate(200px); */
+                opacity: 0;
+                transition: 3s;
+            }
+        }
+
+        @media screen and (max-width:376px){
+            .history{
+                margin-top: 20%;
+                /* transform: translate(200px); */
+                opacity: 0;
+                transition: 2s;
+            }
+        }
+        .history-title-img{
+            width: 100%;
+            height: 220px;
+            background-image: url(img/3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        .media-history-title-img{
+            width: 100%;
+            height: 240px;
+            background-image: url(img/img-3-iphone.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        
+        .leafWrap{
+            width: 150px;
+            position: absolute;
+            left: 10%;
+            bottom: 10%;
+            animation: leftleafmove 1.3s infinite alternate;
+        }
+        
+        @keyframes leftleafmove {
+            0% {
+                transform:  translatey(0);
+                
+            }
+
+            100% {
+                transform: translatey(30px);
+                
+            }
+        }
+        
+        .rightWrap{
+            width: 200px;
+            position: absolute;
+            left: 80%;
+            bottom: 30%;
+            animation: rightleafmove 2s infinite alternate;
+        }
+
+        @keyframes rightleafmove {
+            0% {
+                transform: translatey(0);
+                
+            }
+
+            100% {
+                transform: translatey(40px);
+                
+            }
+        }
+
+        /* ----------manufacture section--------- */
+        .manufacture-info{
+            margin: 7% 0 0 0;
+            width: 100%;
+            height: 1360px;
+            background-image: url(img/background3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .manufacture-title{
+            transform: translateY(100px);
+            transition: 2s;
+            opacity: 0;
+        }
+        .manufacture-title-img{
+            width: 100%;
+            height: 220px;
+            background-image: url(img/4.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        .media-manufacture-title-img{
+            width: 100%;
+            height: 167px;
+            background-image: url(img/img-4-iphone.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        .container-fluid{
+            margin-top: 90px;
+            width: 80%;
+        }
+
+        .wrap{
+            width: 220px;
+            height:220px ;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .img-card-div{
+            width: 180px;
+            height: 180px;
+        }
+        .img-card{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-text{
+            width: 100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-bottom-seaction{
+            margin-top: 60px;
+        }
+        
+        /* .card-top-seaction{
+            transform: translatex(30px);
+            transition: 3s;
+            opacity: 0;
+        } */
+
+        .manufacture-card-1{
+            transform: translatex(30px);
+            transition: 1s;
+            opacity: 0;
+            
+        }
+
+        .manufacture-card-2{
+            transform: translatex(30px);
+            transition: 1.5s;
+            opacity: 0;
+            
+        }
+        .manufacture-card-3{
+            transform: translatex(30px);
+            transition: 2s;
+            opacity: 0;
+            
+        }
+        .manufacture-card-4{
+            transform: translatex(30px);
+            transition: 2.5s;
+            opacity: 0;
+            
+        }
+        .manufacture-card-5{
+            transform: translatex(30px);
+            transition: 3s;
+            opacity: 0;
+            
+        }
+        .manufacture-card-6{
+            transform: translatex(30px);
+            transition: 3.5s;
+            opacity: 0;
+            
+        }
+        .manufacture-card-7{
+            transform: translatex(30px);
+            transition: 4s;
+            opacity: 0;
+            
+        }
+        .manufacture-card-8{
+            transform: translatex(30px);
+            transition: 4.5s;
+            opacity:0 ;
+            
+        }
+
+        /* @keyframes delay {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        } */
+
+/* ---media manufacture--------- */
+    .media-manufacture-img{
+        width: 100%;
+        height: 165px;
+        background-image: url(img/img-4-iphone.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .media-manufacture-title {
+        transform: translateY(10px);
+        opacity: 0;
+        transition: 3s;
+    }
+    .m-m-c {
+        /* border: 1px solid #000; */
+        padding-top: 20px;
+        margin: 0 15px ;
+        display:flex;
+        overflow-x: auto;
+        scroll-padding:0 50%;
+        scroll-snap-type: x mandatory;
+        
+        /* scroll-snap-type: 容器裡的吸附方向 mandatory　強制吸附x軸
+        proximity 是預設值 */
+        
+    }
+    .media-manufacture-card1{
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+        /* scroll-snap-align: 滾動捕獲的對齊位置 */
+        display: inline-block;
+        
+    }
+    /* ::-webkit-scrollbar{
+        display: none;
+    } */
+    .media-manufacture-card{
+        min-height: 400px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .media-manufacture-card-img{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(img/card1.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .media-manufacture-card2-img{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(img/card2.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .media-manufacture-card3-img{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(img/card3.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .media-manufacture-card4-img{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(img/card4.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .media-manufacture-card5-img{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(img/card5.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .media-manufacture-card6-img{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(img/card6.jfif);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .media-manufacture-card7-img{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(img/card7.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .media-manufacture-card8-img{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(img/card8.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
