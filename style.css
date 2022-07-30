@@ -7,14 +7,18 @@
         }
 
         body{
-            background-image: url(img/背景-0.png);
+            background-image: url(img/背景圖1.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            
         }
         /* color */
         .brown-0{
             color: #C7802D;
+        }
+        .brown-1{
+            color: #AC9A7F;
         }
         .brown-2{
             color: #978463;
@@ -31,19 +35,24 @@
         .light-color{
             color: #FCF7F1;
         }
-    /* ----------------nav ------------------*/
-        .hidden{
-            transform: translateY(px);
+        .dark-color{
+            color: #a55428;
         }
+    /* ----------------nav ------------------*/
+
         @media screen and (min-width:376px) {
-            nav{
-                width: 100%;
-                background-color: #ffffff;
-                position: fixed;
-                z-index: 999999;
-                top: 0%;
-                transform: 1s;
-            }
+            
+        }
+        #navbar{
+            width: 100%;
+            background-color: #ffffff;
+            position: fixed;
+            z-index: 999999;
+            top: 0%;
+            transition: 1s;
+        }
+        .hidden{
+            transform: translateY(-100px);
         }
         .scroll{
             width: 100%;
@@ -256,7 +265,7 @@
         }
         .container-fluid{
             margin-top: 90px;
-            width: 80%;
+            width: 95%;
         }
 
         .wrap{
@@ -264,6 +273,7 @@
             height:220px ;
             border-radius: 50%;
             overflow: hidden;
+            filter:drop-shadow(2px 2px 7px #503916);
         }
         .img-card-div{
             width: 180px;
@@ -274,13 +284,13 @@
             height: 100%;
             object-fit: cover;
         }
-        .card-text{
+        /* .card-text{
             width: 100%;
             display: -webkit-box;
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
-        }
+        } */
 
         .card-bottom-seaction{
             margin-top: 60px;
@@ -367,7 +377,7 @@
         opacity: 0;
         transition: 3s;
     }
-    .m-m-c {
+    .scroll-snap {
         /* border: 1px solid #000; */
         padding-top: 20px;
         margin: 0 15px ;
@@ -390,7 +400,7 @@
     /* ::-webkit-scrollbar{
         display: none;
     } */
-    .media-manufacture-card{
+    .media-manufacture-card {
         min-height: 400px;
         text-align: center;
         border-radius: 10px;
@@ -490,4 +500,204 @@
         background-position: center;
         object-fit: cover;
         overflow: hidden;
+    }
+
+    /*-------------tea presentation -----------------*/
+
+    .tcard-seaction{
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .tea-card{
+        margin: 0 10px;
+        position: relative;
+        width: 330px;
+        height: 286px;
+    }
+    .cardface {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+    }
+    .face1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform-origin:bottom;
+    }
+    .face1-name{
+        background-color: #97846393;
+        height: 40px;
+        padding: 5px 0 0 0  ;
+    }
+    .tea-card-img{
+        max-width: 330;
+    }
+    .face1-name{
+        margin: 10px 0 0;
+        color: #3F3019;
+        text-align: center;
+
+    }
+    .tcard-seaction .tea-card:hover .face1{
+        transform: translateY(-100%) rotateX(90deg);
+    } 
+    .face2{
+        background-color: #AC9A7F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-origin: top;
+        transform: translateY(100%) rotateX(90deg);
+    }
+    .tcard-seaction .tea-card:hover .face2{
+        transform: translateY(0%) rotateX(0deg);
+    }
+    /* -----md-tcard-seaction ------ */
+    .media-tea-presentation{
+        min-height: 350vh;
+        margin-top: 50px;
+        width: 100%;
+        background: url(img/毛玻璃背景3.png)center center / 100% no-repeat;
+        background-attachment: fixed;
+        /* background: linear-gradient(#fbcc97, #A7A88D); */
+        }
+
+    .media-tea-presentation .container-fluid{
+        margin-top: 3rem;
+        }
+    .media-tea-presentation-img{
+        width: 100%;
+        height: 165px;
+        background-image: url(img/img-5-iphone.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .media-tea-presentation-img h4{
+        padding-top: 0;
+        transform: translateY(100%);
+    }
+    .md-tcard-seaction-card{
+        margin-top: 25px;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 450px;
+        border-radius: 30px;
+        background: rgba(225, 225, 225, 0.1);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(225, 225, 225, 0.5);
+        border-right: 1px solid (225, 225, 225, 0.2);
+        border-bottom: 1px solid (225, 225, 225, 0.2);
+        border-radius: 10px;
+        z-index: 10;
+        backdrop-filter: blur(30px);
+    }
+    .md-tcard-seaction-img-1 {
+        width: 100%;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        background-image: url(img/東方美人2.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .md-tcard-seaction-img-2 {
+        width: 100%;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        background-image: url(img/凍頂烏龍2.jpg);
+        background-size: cover;
+        background-position: 30 60;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .md-tcard-seaction-img-3 {
+        width: 100%;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        background-image: url(img/阿里山蜜香烏龍2.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .md-tcard-seaction-img-4 {
+        width: 100%;
+        height: 200px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        background-image: url(img/日月潭紅玉紅茶2.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* -----------top---------------*/
+    .top{
+        background-color:#978463;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        z-index: 99999;
+        right: 30px;
+        bottom: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
